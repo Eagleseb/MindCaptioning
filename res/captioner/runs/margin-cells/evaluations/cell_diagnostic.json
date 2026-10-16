@@ -1,0 +1,12 @@
+{
+  "brain_averaged": {
+    "true_cell_fraction": 0.19444444444444445,
+    "median_true_distance": 4.773451805114746,
+    "mean_true_distance": 4.8118133544921875
+  },
+  "brain_norm_matched": {
+    "true_cell_fraction": 0.4722222222222222,
+    "median_true_distance": 5.167131423950195,
+    "mean_true_distance": 5.11221170425415
+  }
+}

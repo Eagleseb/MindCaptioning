@@ -1,0 +1,43 @@
+# Local environments and caches
+.venv/
+*.egg-info/
+build/
+dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.DS_Store
+.vscode/
+.idea/
+
+# Raw, derived, and downloaded data
+/data/
+*.mat
+*.h5
+*.hdf5
+*.npy
+*.npz
+
+# Model checkpoints and runtime logs
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.log
+
+# Executed notebooks are generated analysis artifacts. Builder/source scripts
+# remain versioned.
+/notebooks/*.ipynb
+/notebooks/.ipynb_checkpoints/
+
+# Results are local by default. Keep only compact, reviewable summaries.
+/res/**
+!/res/README.md
+!/res/**/
+!/res/**/shells.json
+!/res/**/cell_diagnostic.json
+!/res/captioner/summary.json
+!/res/captioner/runs/index.jsonl

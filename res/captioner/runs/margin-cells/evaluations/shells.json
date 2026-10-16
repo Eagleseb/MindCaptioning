@@ -1,0 +1,44 @@
+{
+  "rows": [
+    {
+      "fraction": 0.0,
+      "axis": "clean",
+      "rouge_l": 0.48453323068449927,
+      "cell_retention": 1.0,
+      "distinct": 1.0,
+      "n": 211
+    },
+    {
+      "fraction": 0.5,
+      "axis": "angular",
+      "rouge_l": 0.46665967494308325,
+      "cell_retention": 1.0,
+      "distinct": 0.995260663507109,
+      "n": 211
+    },
+    {
+      "fraction": 0.5,
+      "axis": "radial",
+      "rouge_l": 0.4721654967864099,
+      "cell_retention": 1.0,
+      "distinct": 1.0,
+      "n": 211
+    },
+    {
+      "fraction": 0.9,
+      "axis": "angular",
+      "rouge_l": 0.445437344483635,
+      "cell_retention": 1.0,
+      "distinct": 0.9052132701421801,
+      "n": 211
+    },
+    {
+      "fraction": 0.9,
+      "axis": "radial",
+      "rouge_l": 0.4511332628066088,
+      "cell_retention": 1.0,
+      "distinct": 1.0,
+      "n": 211
+    }
+  ]
+}

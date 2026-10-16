@@ -1,0 +1,52 @@
+{
+  "dataset": {
+    "subject": "S1",
+    "split": "testPerception",
+    "test_videos": 72,
+    "chance_identification": 0.013888888888888888
+  },
+  "experiments": [
+    {
+      "id": "baseline",
+      "comparison_condition": "brain_norm_matched",
+      "brain_rouge_l": 0.37,
+      "brain_identification": 0.1111111111111111,
+      "shuffled_rouge_l": 0.245,
+      "caption_feature_identification": 0.6111111111111112
+    },
+    {
+      "id": "decode-penalty",
+      "comparison_condition": "brain_norm_matched",
+      "brain_rouge_l": 0.37677280080774256,
+      "brain_identification": 0.125,
+      "shuffled_rouge_l": 0.25636256183293515,
+      "caption_feature_identification": 0.5972222222222222
+    },
+    {
+      "id": "norm-noise",
+      "comparison_condition": "brain_averaged",
+      "brain_rouge_l": 0.35441500091768774,
+      "brain_identification": 0.06944444444444445,
+      "shuffled_rouge_l": 0.2905359333673826,
+      "caption_feature_identification": 0.6388888888888888
+    },
+    {
+      "id": "prefix16-lora",
+      "comparison_condition": "brain_averaged",
+      "brain_rouge_l": 0.3364235865281098,
+      "brain_identification": 0.09722222222222222,
+      "shuffled_rouge_l": 0.27732593033795083,
+      "caption_feature_identification": 0.7361111111111112
+    },
+    {
+      "id": "margin-cells",
+      "comparison_condition": "brain_norm_matched",
+      "brain_rouge_l": 0.3882444892517867,
+      "brain_identification": 0.1111111111111111,
+      "shuffled_rouge_l": 0.29535380480807244,
+      "caption_feature_identification": 0.5416666666666666,
+      "norm_matched_true_cell_fraction": 0.4722222222222222
+    }
+  ],
+  "conclusion": "Training on clean caption embeddings does not adequately generalize to ridge-decoded brain features. Future captioners should train on leakage-free, out-of-fold brain-decoded features or learn a direct fMRI-to-text mapping."
+}

@@ -1,0 +1,43 @@
+[project]
+name = "mind-captioning"
+version = "0.1.0"
+description = "Encode video captions into per-layer features for Mind Captioning"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = [
+    "h5py",
+    "numpy",
+    "torch",
+    "tqdm",
+    "transformers",
+]
+
+[project.scripts]
+extract-video-features = "extract_video_features:main"
+train-decoder = "train_decoder:main"
+train-captioner = "train_captioner:main"
+evaluate-captioner = "evaluate_captioner:main"
+generate-caption = "generate_caption:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = [
+    "extract_video_features",
+    "train_decoder",
+    "train_captioner",
+    "evaluate_captioner",
+    "generate_caption",
+    "run_experiments",
+    "run_cell_experiment",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
